@@ -1,0 +1,174 @@
+{% extends "baseindex.html" %}
+{% block title %}审计记录{% endblock %}
+{% block pagecss %}  <link href="{{url_for('static',filename='css/pages/dashboard.css')}}" rel="stylesheet" type="text/css" /> {% endblock %}
+
+
+{% block pagecontent %}
+
+<div class="span9">
+
+	<h1 class="page-title">
+		<i class="icon-home"></i>
+		审计记录					
+	</h1>
+
+	<div class="stat-container">
+
+		<div class="stat-holder">						
+			<div class="stat">							
+				<span>5</span>							
+				审计次数							
+			</div> <!-- /stat -->						
+		</div> <!-- /stat-holder -->
+
+		<div class="stat-holder">						
+			<div class="stat">							
+				<span>4</span>							
+				95%完整度通过							
+			</div> <!-- /stat -->						
+		</div> <!-- /stat-holder -->
+
+		<div class="stat-holder">						
+			<div class="stat">							
+				<span>4</span>							
+				99%完整度通过							
+			</div> <!-- /stat -->						
+		</div> <!-- /stat-holder -->
+
+		<div class="stat-holder">						
+			<div class="stat">							
+				<span>1</span>							
+				不完整次数							
+			</div> <!-- /stat -->						
+		</div> <!-- /stat-holder -->
+
+	</div> <!-- /stat-container -->
+
+
+
+
+
+	<div class="widget widget-table">
+
+		<div class="widget-header">
+			<i class="icon-th-list"></i>
+			<h3>详情</h3>
+		</div> <!-- /widget-header -->
+
+		<div class="widget-content">
+
+			<table class="table ">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>文件名</th>
+						
+						
+						<th>95%完整度审计</th>
+						<th>99%完整度审计</th>
+						<th>请求时间</th>
+						<th>是否重新审计</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Java程序设计</td>
+						<td>通过</td>
+						<td>通过</td>
+						<td>2017-04-30-12:23</td>
+						<td class="action-td">
+							<a href="javascript:;" class="btn btn-small btn-warning">
+								<i class="icon-ok"></i>								
+							</a>					
+							<a href="javascript:;" class="btn btn-small">
+								<i class="icon-remove"></i>						
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>C++程序设计</td>
+						<td>通过</td>
+						<td>通过</td>
+						<td>2017-04-29-12:23</td>
+						<td class="action-td">
+							<a href="javascript:;" class="btn btn-small btn-warning">
+								<i class="icon-ok"></i>								
+							</a>					
+							<a href="javascript:;" class="btn btn-small">
+								<i class="icon-remove"></i>						
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Python程序设计</td>
+						<td>通过</td>
+						<td>通过</td>
+						<td>2017-04-28-12:23</td>
+						<td class="action-td">
+							<a href="javascript:;" class="btn btn-small btn-warning">
+								<i class="icon-ok"></i>								
+							</a>					
+							<a href="javascript:;" class="btn btn-small">
+								<i class="icon-remove"></i>						
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Java程序设计2</td>
+						<td>不通过</td>
+						<td>不通过</td>
+						<td>2017-04-27-12:23</td>
+						<td class="action-td">
+							<a href="javascript:;" class="btn btn-small btn-warning">
+								<i class="icon-ok"></i>								
+							</a>					
+							<a href="javascript:;" class="btn btn-small">
+								<i class="icon-remove"></i>						
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>.NET程序设计</td>
+						<td>通过</td>
+						<td>通过</td>
+						<td>2017-04-30-12:23</td>
+						<td class="action-td">
+							<a href="javascript:;" class="btn btn-small btn-warning">
+								<i class="icon-ok"></i>								
+							</a>					
+							<a href="javascript:;" class="btn btn-small">
+								<i class="icon-remove"></i>						
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+		</div> <!-- /widget-content -->
+
+	</div> <!-- /widget -->
+
+
+</div> <!-- /span9 -->
+{% endblock %}
+
+{% block js %}
+
+<script src="{{url_for('static',filename='js/jquery-1.7.2.min.js')}}"></script>
+<script src="{{url_for('static',filename='js/bootstrap.js')}}"></script>
+<script src="{{url_for('static',filename='js/excanvas.min.js')}}"></script>
+<script src="{{url_for('static',filename='js/jquery.flot.js')}}"></script>
+<script src="{{url_for('static',filename='js/jquery.flot.pie.js')}}"></script>
+<script src="{{url_for('static',filename='js/jquery.flot.orderBars.js')}}"></script>
+<script src="{{url_for('static',filename='js/jquery.flot.resize.js')}}"></script>
+<script src="{{url_for('static',filename='js/charts/bar.js')}}"></script>
+
+
+{% endblock %}

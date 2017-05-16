@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}审计平台后台{% endblock %}
+
+ {% block biaoti1 %}{{ name }}{% endblock %}
+ {% block content %}
+ <span class="heading">审计记录</span>
+
+ <div class="portlet-body">
+
+								<table class="table table-striped table-bordered table-advance table-hover">
+
+									<thead>
+
+										<tr>
+
+											<th><i class="icon-briefcase"></i> Company</th>
+
+											<th class="hidden-phone"><i class="icon-user"></i> Contact</th>
+
+											<th><i class="icon-shopping-cart"></i> Total</th>
+
+											<th></th>
+
+										</tr>
+
+									</thead>
+
+									<tbody>
+
+										<tr>
+
+											<td class="highlight">
+
+												<div class="success"></div>
+
+												<a href="#">RedBull</a>
+
+											</td>
+
+											<td class="hidden-phone">Mike Nilson</td>
+
+											<td>2560.60$</td>
+
+											<td><a href="#" class="btn mini purple"><i class="icon-edit"></i> Edit</a></td>
+
+										</tr>
+
+										<tr>
+
+											<td class="highlight">
+
+												<div class="info"></div>
+
+												<a href="#">Google</a>
+
+											</td>
+
+											<td class="hidden-phone">Adam Larson</td>
+
+											<td>560.60$</td>
+
+											<td><a href="#" class="btn mini black"><i class="icon-trash"></i> Delete</a></td>
+
+										</tr>
+
+										<tr>
+
+											<td class="highlight">
+
+												<div class="important"></div>
+
+												<a href="#">Apple</a>
+
+											</td>
+
+											<td class="hidden-phone">Daniel Kim</td>
+
+											<td>3460.60$</td>
+
+											<td><a href="#" class="btn mini purple"><i class="icon-edit"></i> Edit</a></td>
+
+										</tr>
+
+										<tr>
+
+											<td class="highlight">
+
+												<div class="warning"></div>
+
+												<a href="#">Microsoft</a>
+
+											</td>
+
+											<td class="hidden-phone">Nick </td>
+
+											<td>2560.60$</td>
+
+											<td><a href="#" class="btn mini blue"><i class="icon-share"></i> Share</a></td>
+
+										</tr>
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+
+						<!-- END SAMPLE TABLE PORTLET-->
+{% endblock %}

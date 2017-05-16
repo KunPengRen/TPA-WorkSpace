@@ -1,2 +1,6 @@
 Flask
 Flask-Script
+flask-mongoengine
+Flask-Bootstrap
+jinja2
+requests

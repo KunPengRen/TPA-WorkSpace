@@ -5,4 +5,3 @@
 # @Link    : github.com/KunPengRen
 # @Version : $Id$
 
-import os

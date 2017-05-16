@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %}登录{% endblock %}
+
+
+
+{% block navright %}  
+
+<li class="divider-vertical"></li>
+
+<li class="dropdown">
+
+	<a data-toggle="dropdown" class="dropdown-toggle " href="#">
+		{{name}}<b class="caret"></b>							
+	</a>
+
+	<ul class="dropdown-menu">
+		<li>
+			<a href="./account.html"><i class="icon-user"></i> 账户信息 </a>
+		</li>
+
+		<li>
+			<a href="./change_password.html"><i class="icon-lock"></i> 更改密码 </a>
+		</li>
+
+		<li class="divider"></li>
+
+		<li>
+			<a href="./"><i class="icon-off"></i> 退出 </a>
+		</li>
+	</ul>
+</li>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div id="content">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<div class="span3">
+				
+				<div class="account-container">
+
+					<div class="account-avatar">
+						<img src="{{url_for('static',filename='img/headshot.png')}}" alt="" class="thumbnail" />
+					</div> <!-- /account-avatar -->
+
+					<div class="account-details">
+
+						<span class="account-name">{{name}}</span>
+						
+
+					</div> <!-- /account-details -->
+
+				</div> <!-- /account-container -->
+				
+				<hr />
+				
+				<ul id="main-nav" class="nav nav-tabs nav-stacked">
+					
+					<li class="active">
+						<a href="./">
+							<i class="icon-home"></i>
+							审计记录		
+						</a>
+					</li>
+					
+					<li>
+						<a href="./faq.html">
+							<i class="icon-pushpin"></i>
+							审计日志	<span class="label label-warning pull-right">5</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="./account.html">
+							<i class="icon-user"></i>
+							不完整文件						
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="./account.html">
+							<i class="icon-user"></i>
+							用户信息							
+						</a>
+					</li>
+					
+					<li>
+						<a href="./login.html">
+							<i class="icon-lock"></i>
+							退出系统	
+						</a>
+					</li>
+					
+				</ul>	
+				
+				<hr />
+				
+				<div class="sidebar-extra">
+					<p>第三方审计平台基于可信第三方审计机构，为用户和云服务商之间提供文件完整性审计功能</p>
+				</div> 
+				
+				<br />
+
+			</div> <!-- /span3 -->
+			{% block pagecontent %}
+
+			{% endblock %}
+		</div> <!-- /row -->
+
+	</div> <!-- /container -->
+
+</div> <!-- /content -->
+
+{% endblock %}		
+
+
+
+
+
+
+
+
